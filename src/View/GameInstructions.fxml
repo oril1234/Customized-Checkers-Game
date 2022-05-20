@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1154.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GameInstructionsController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1154.0">
+         <image>
+            <Image url="@Backround.jpeg" />
+         </image>
+      </ImageView>
+      <Text focusTraversable="true" fontSmoothingType="LCD" layoutX="331.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hamka Instructions" underline="true" wrappingWidth="479.7666015625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#169a9a" />
+                  <Stop color="#d8ffff" offset="0.010869565217391304" />
+                  <Stop color="#497373" offset="0.9963768115942029" />
+                  <Stop color="#f2f2f2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Verdana Italic" size="47.0" />
+         </font>
+      </Text>
+      <TextArea accessibleRole="TEXT" editable="false" layoutX="112.0" layoutY="51.0" mouseTransparent="true" prefHeight="596.0" prefWidth="931.0" style="-fx-text-fill: black;" text="&#10;&#10;Hamka is based on the classic board.  &#10;The game includes some additional rules:&#10;1. A queen is able to move beyond the border of the board and relocate on its opposite side.&#10;2. If a player makes a valid move he's granted with points that are the difference ( positive or negative ) &#10;   between the passed seconds to 1 minute.&#10;3. A player is granted 100 points for eating checkers of the opponent.&#10;4. The game is finished when one of the player runs out of checkers, or if the current player can't move at all; &#10;   The winner is the player who has earned more points.&#10;&#10;Moreover, the game also includes special tiles.&#10;&#10;      &#10;       Yellow Tile- Every turn 3 tiles with no checkers are painted with Yellow. if the current player steps on one of them he will be asked a question.&#10;The questions are divided to 3 levels: easy, medium and hard. If the player gives the correct answer for easy question,&#10;he gets 100, medium-200, hard-500.&#10;For wrong answer he loses 250 points for easy question, medium-100, hard-50.&#10;&#10;       Green tile-If the player doesn't make a move after 30 seconds, one of the reachable tiles for him will be painted with green. &#10;If he steps on such tile, he will be granted 50 points.&#10;&#10;       Red tile- Every turn a red tile appears on one of the reachable tiles for the player. &#10;Stepping on such tile gives him another move in the same turn only if it's possible. &#10;In such case he will be marked with red on the sides. If the checker that stepps on a red tile is a queen it will be marked with purple.&#10;&#10;       Orange tile- If the player doesn't make a move after 90 seconds, all of the reachable tiles for him will be painted with orange.&#10;&#10;       Blue tile- If a player is left with 2 regular checkers and one queen, one of the free tiles will be painted with blue. &#10;Stepping on such tile opens a pop up screen with a mini checker board. &#10;The player is then able to restore one of his checkers that were excluded, to tiles that are far more than 2 free tiles from every opponent checker.&#10;&#10;Moreover, if a player is punished for not eating, we won't be given any of the priviliges given by stepping on special tiles, &#10;and one of his checkers that could eat will be excluded.">
+         <effect>
+            <InnerShadow choke="0.26" height="45.88" radius="27.105000000000004" width="64.54" />
+         </effect>
+      </TextArea>
+      <TextFlow layoutX="127.7548828125" layoutY="106.91943359375">
+         <children>
+            <AnchorPane>
+               <children>
+                  <FlowPane layoutX="0.62255859375" />
+               </children>
+            </AnchorPane>
+         </children>
+      </TextFlow>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff81fe0" height="24.0" layoutX="118.0" layoutY="286.0" stroke="#cfb430" strokeType="OUTSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21a011e0" height="24.0" layoutX="118.0" layoutY="372.0" stroke="#158e39" strokeType="OUTSIDE" width="23.0" />
+      <Button layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#returnToHomePage" prefHeight="46.0" prefWidth="78.0" style="-fx-background-radius: 22; -fx-background-color: d1d6d6;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa621fd" height="24.0" layoutX="118.0" layoutY="492.0" stroke="#a2680b" strokeType="OUTSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3521ffe0" height="24.0" layoutX="118.0" layoutY="526.0" stroke="#361b99" strokeType="OUTSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f02711e0" height="24.0" layoutX="118.0" layoutY="425.0" stroke="#a21b0c" strokeType="OUTSIDE" width="23.0" />
+      <Group layoutX="130.0" layoutY="339.0" />
+      <Text blendMode="MULTIPLY" cache="true" fill="#1293ad" focusTraversable="true" layoutX="142.0" layoutY="82.0" pickOnBounds="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ABOUT THIS GAME" wrappingWidth="153.96490478515625">
+         <font>
+            <Font name="Verdana Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text blendMode="MULTIPLY" cache="true" fill="#1293ad" layoutX="150.0" layoutY="280.0" pickOnBounds="true" strokeType="OUTSIDE" strokeWidth="0.0" text="SPECIAL TILES:" wrappingWidth="153.96490478515625">
+         <font>
+            <Font name="Verdana Italic" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="176.0" fitWidth="300.0" layoutX="697.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@damka.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

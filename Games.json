@@ -1,0 +1,84 @@
+{
+	"games":[
+		{
+			"date":"10.01.2021 13:04:15",
+			"duration":"00:01:59",
+			"winner":"W",
+			"winner_score":"225",
+			"loser":"B",
+			"loser_score":"145"
+		},
+		{
+			"date":"10.01.2021 13:45:19",
+			"duration":"00:05:25",
+			"winner":"white",
+			"winner_score":"1830",
+			"loser":"black",
+			"loser_score":"1265"
+		},
+		{
+			"date":"10.01.2021 13:47:21",
+			"duration":"00:04:19",
+			"winner":"black",
+			"winner_score":"1561",
+			"loser":"white",
+			"loser_score":"896"
+		},
+		{
+			"date":"10.01.2021 14:13:18",
+			"duration":"00:00:11",
+			"winner":"W",
+			"winner_score":"473",
+			"loser":"B",
+			"loser_score":"0"
+		},
+		{
+			"date":"10.01.2021 14:30:47",
+			"duration":"00:00:10",
+			"winner":"W",
+			"winner_score":"150",
+			"loser":"B",
+			"loser_score":"0"
+		},
+		{
+			"date":"10.01.2021 14:33:25",
+			"duration":"00:00:04",
+			"winner":"W",
+			"winner_score":"156",
+			"loser":"B",
+			"loser_score":"0"
+		},
+		{
+			"date":"10.01.2021 14:34:09",
+			"duration":"00:00:04",
+			"winner":"W",
+			"winner_score":"156",
+			"loser":"B",
+			"loser_score":"0"
+		},
+		{
+			"date":"10.01.2021 14:35:06",
+			"duration":"00:00:02",
+			"winner":"W",
+			"winner_score":"158",
+			"loser":"B",
+			"loser_score":"0"
+		},
+		{
+			"date":"10.01.2021 14:35:40",
+			"duration":"00:00:02",
+			"winner":"W",
+			"winner_score":"158",
+			"loser":"B",
+			"loser_score":"0"
+		},
+		{
+			"date":"10.01.2021 14:49:48",
+			"duration":"00:01:43",
+			"winner":"B",
+			"winner_score":"525",
+			"loser":"W",
+			"loser_score":"316"
+		}
+	]
+}

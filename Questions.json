@@ -1,0 +1,172 @@
+{
+	"questions":[
+		{
+			"question":"What are the customer benefits from the agile methodology?",
+			"level":2,
+			"answers":[
+				"Customers can make changes without paying exorbitant costs",
+				"Customers do not have to be involved throughout the process",
+				"Customers can make changes only in the end of the process  ",
+				"All of the above"
+			],
+			"team":"Sharks",
+			"correct_ans":0
+		},
+		{
+			"question":"What are the 3 scrum roles?",
+			"level":1,
+			"answers":[
+				"Product owner, scrum master , development team",
+				"Scrum master , QA tester, product owner",
+				"Product owner, development team,Team Manager",
+				"Development team,Team Manager, QA tester"
+			],
+			"team":"Sharks",
+			"correct_ans":0
+		},
+		{
+			"question":"Which of the following is true about SRS?",
+			"level":3,
+			"answers":[
+				"Provide a basis for estimating costs and schedules",
+				"The SRS requirement document written by the Customer ",
+				"SRS Focuses mainly on functional requirement",
+				"Requirements cannot change after writing SRS"
+			],
+			"team":"Sharks",
+			"correct_ans":0
+		},
+		{
+			"question":"SRS stands for?",
+			"level":3,
+			"answers":[
+				"Software requirement standard",
+				"Software requirement specification",
+				"Software Refinement Specification",
+				"Software requirement Subjects"
+			],
+			"team":"Sharks",
+			"correct_ans":1
+		},
+		{
+			"question":"White box techniques are also called as?",
+			"level":3,
+			"answers":[
+				"error Guessing Technique",
+				"Design Based Testing  ",
+				"Structural Testing",
+				"Experience Based Technique"
+			],
+			"team":"Sharks",
+			"correct_ans":2
+		},
+		{
+			"question":"Design structure and knowledge of software program is essential in ?",
+			"level":2,
+			"answers":[
+				"Black box testing",
+				"Integration testing",
+				"White box testing",
+				"None of the above"
+			],
+			"team":"Sharks",
+			"correct_ans":2
+		},
+		{
+			"question":"In Software Maintenance which type of testing is being used?",
+			"level":1,
+			"answers":[
+				"System Testing",
+				"Regression Testing",
+				"Integration Testing",
+				"Unit Testing"
+			],
+			"team":"Sharks",
+			"correct_ans":1
+		},
+		{
+			"question":"Spotted by users in software maintenance removing errors is known as  ?",
+			"level":1,
+			"answers":[
+				"Adaptive",
+				"Preventive ",
+				"Perfective",
+				"Corrective"
+			],
+			"team":"Sharks",
+			"correct_ans":3
+		},
+		{
+			"question":"MVC is composed of three components these are  ?",
+			"level":1,
+			"answers":[
+				"Member Vertical Controller",
+				"Model variable centered ",
+				"Model view controller",
+				"Member Vertical Controller"
+			],
+			"team":"Sharks",
+			"correct_ans":2
+		},
+		{
+			"question":"What Transaction processing systems allow? \t",
+			"level":2,
+			"answers":[
+				"Information in a database to be Internally accessed and modified by a single user.",
+				"Information in a database to be remotely accessed and modified by a single user.",
+				"Information in a database to be remotely accessed and modified by a number of users.",
+				"None of the above."
+			],
+			"team":"Sharks",
+			"correct_ans":2
+		},
+		{
+			"question":"What are the two peer review methods?\t",
+			"level":2,
+			"answers":[
+				"Inspections and integrations",
+				"Inspections and walkthroughs",
+				"Verifications and validations ",
+				"Walkthroughs and validations ."
+			],
+			"team":"Sharks",
+			"correct_ans":1
+		},
+		{
+			"question":"What are The major difference between formal reviews and peer review methods\t",
+			"level":1,
+			"answers":[
+				"Responsibility and Punctuality",
+				"Participants and responsibility",
+				"Participants and objectives ",
+				"Objectives and responsibility ."
+			],
+			"team":"Sharks",
+			"correct_ans":2
+		},
+		{
+			"question":"Which design pattern defines one-to-many dependency among objects?",
+			"level":2,
+			"answers":[
+				"Singleton pattern",
+				"Facade Pattern",
+				"Observer pattern ",
+				"Factory method pattern ."
+			],
+			"team":"Sharks",
+			"correct_ans":2
+		},
+		{
+			"question":"Which of the following is NOT one of test methods?",
+			"level":1,
+			"answers":[
+				"White box test",
+				"JQuery test",
+				"JUnit test",
+				"Black box test."
+			],
+			"team":"Sharks",
+			"correct_ans":1
+		}
+	]
+}

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="802.0" prefWidth="1229.0" style="-fx-background-color: #6d7f55;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GameController">
+	<children>
+      <ImageView fitHeight="802.0" fitWidth="1347.0" layoutX="-37.0" pickOnBounds="true" preserveRatio="true" translateZ="-1.0">
+         <image>
+            <Image url="@MainGame.jpg" />
+         </image>
+      </ImageView>
+				<AnchorPane fx:id="detailsPane" layoutX="784.0" layoutY="78.0" prefHeight="633.0" prefWidth="328.0" style="-fx-background-color: black;">
+					<children>
+            <ImageView fitHeight="619.0" fitWidth="377.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ScoreSide.jpg" />
+               </image>
+            </ImageView>
+						<Rectangle fx:id="whiteRec" arcHeight="5.0" arcWidth="5.0" fill="#5bfcfc00" height="58.0" layoutX="47.0" layoutY="463.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="253.0" />
+						<Rectangle fx:id="blackRec" arcHeight="5.0" arcWidth="5.0" fill="#5bfcfc00" height="58.0" layoutX="47.0" layoutY="533.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="253.0" />
+						<Label fx:id="currentTimerLabel" layoutX="103.0" layoutY="265.0" prefHeight="45.0" prefWidth="139.0">
+							<font>
+								<Font size="30.0" />
+							</font>
+						</Label>
+						<Label fx:id="whitePLabel" layoutX="63.0" layoutY="474.0" prefHeight="36.0" prefWidth="139.0" textFill="WHITE">
+							<font>
+								<Font size="25.0" />
+							</font>
+						</Label>
+						<Label fx:id="whitePLabelScore" layoutX="232.0" layoutY="474.0" prefHeight="36.0" prefWidth="61.0" text="0" textFill="WHITE">
+							<font>
+								<Font name="System Bold" size="25.0" />
+							</font>
+						</Label>
+						<Label fx:id="blackPLabel" layoutX="66.0" layoutY="544.0" prefHeight="36.0" prefWidth="139.0">
+							<font>
+								<Font name="System Bold" size="25.0" />
+							</font>
+               <effect>
+                  <Bloom>
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="BLACK" />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Bloom>
+               </effect>
+						</Label>
+						<Label fx:id="blackPLabelScore" layoutX="233.0" layoutY="544.0" prefHeight="36.0" prefWidth="61.0" text="0">
+							<font>
+								<Font name="System Bold" size="25.0" />
+							</font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="BLACK" />
+                     </light>
+                  </Lighting>
+               </effect>
+						</Label>
+						<Group layoutX="73.0" layoutY="575.0" />
+      						<Label fx:id="generalTimerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="99.0" prefHeight="56.0" prefWidth="158.0" style="-fx-background-position: center;">
+      							<font>
+      								<Font size="40.0" />
+      							</font>
+      						</Label>
+            <Text focusTraversable="true" fontSmoothingType="LCD" layoutX="46.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="General Timer" underline="true" wrappingWidth="274.0">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="89.91" radius="59.295" spread="0.87" width="149.27">
+                     <input>
+                        <MotionBlur radius="0.0">
+                           <input>
+                              <Bloom />
+                           </input>
+                        </MotionBlur>
+                     </input>
+                  </DropShadow>
+               </effect>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#169a9a" />
+                        <Stop color="#385454" offset="0.010869565217391304" />
+                        <Stop color="#497373" offset="0.9963768115942029" />
+                        <Stop color="#f2f2f2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Verdana Italic" size="32.0" />
+               </font>
+            </Text>
+            <Text focusTraversable="true" fontSmoothingType="LCD" layoutX="46.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Timer" underline="true" wrappingWidth="253.0">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="89.91" radius="59.295" spread="0.87" width="149.27">
+                     <input>
+                        <MotionBlur radius="0.0">
+                           <input>
+                              <Bloom />
+                           </input>
+                        </MotionBlur>
+                     </input>
+                  </DropShadow>
+               </effect>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#169a9a" />
+                        <Stop color="#385454" offset="0.010869565217391304" />
+                        <Stop color="#497373" offset="0.9963768115942029" />
+                        <Stop color="#f2f2f2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Verdana Italic" size="32.0" />
+               </font>
+            </Text>
+            <Text focusTraversable="true" fontSmoothingType="LCD" layoutX="117.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" underline="true" wrappingWidth="158.0">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="89.91" radius="59.295" spread="0.87" width="149.27">
+                     <input>
+                        <MotionBlur radius="0.0">
+                           <input>
+                              <Bloom />
+                           </input>
+                        </MotionBlur>
+                     </input>
+                  </DropShadow>
+               </effect>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#169a9a" />
+                        <Stop color="#385454" offset="0.010869565217391304" />
+                        <Stop color="#497373" offset="0.9963768115942029" />
+                        <Stop color="#f2f2f2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Verdana Italic" size="32.0" />
+               </font>
+            </Text>
+					</children>
+					<effect>
+						<Glow />
+					</effect>
+				</AnchorPane>
+				<AnchorPane fx:id="boardPane" layoutX="98.0" layoutY="78.0" prefHeight="621.0" prefWidth="692.0" style="-fx-background-radius: 12;" AnchorPane.leftAnchor="98.0">
+					<children>
+						<Group fx:id="tilesGroup" />
+						<Group fx:id="checkersGroup" />
+					</children>
+         <effect>
+            <InnerShadow choke="0.35" height="39.66" radius="31.7675" width="89.41" />
+         </effect>
+				</AnchorPane>
+      <StackPane fx:id="messagePane" layoutX="98.0" layoutY="20.0" prefHeight="58.0" prefWidth="583.0">
+         <children>
+            <Text fx:id="messageText" focusTraversable="true" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="575.0">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="89.91" radius="59.295" spread="0.87" width="149.27">
+                     <input>
+                        <MotionBlur radius="0.0">
+                           <input>
+                              <Bloom />
+                           </input>
+                        </MotionBlur>
+                     </input>
+                  </DropShadow>
+               </effect>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="white" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Verdana Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <Button fx:id="editButton" layoutX="931.0" layoutY="16.0" mnemonicParsing="false" onAction="#onPause" prefHeight="32.0" prefWidth="124.0" style="-fx-background-color: Orange; -fx-background-radius: 22;" text="Pause">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#f5f5f5" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1081.0" layoutY="16.0" mnemonicParsing="false" onAction="#exitFromGame" prefHeight="32.0" prefWidth="124.0" style="-fx-background-color: #d03f3f; -fx-background-radius: 22;" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#f5f5f5" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+	</children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>

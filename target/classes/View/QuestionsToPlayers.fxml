@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="questionsDetails" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.QuestionsToPlayersController">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="904.0" layoutX="-62.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MainGame.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="questionLabel" layoutX="100.0" layoutY="36.0" prefHeight="83.0" prefWidth="658.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="answer1" layoutX="100.0" layoutY="129.0" mnemonicParsing="false" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="answerGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="answer2" layoutX="100.0" layoutY="205.0" mnemonicParsing="false" textFill="WHITE" toggleGroup="$answerGroup" />
+      <RadioButton fx:id="answer3" layoutX="100.0" layoutY="281.0" mnemonicParsing="false" textFill="WHITE" toggleGroup="$answerGroup" />
+      <RadioButton fx:id="answer4" layoutX="101.0" layoutY="369.0" mnemonicParsing="false" textFill="WHITE" toggleGroup="$answerGroup" />
+      <Button layoutX="109.0" layoutY="460.0" mnemonicParsing="false" onAction="#answerQuestion" prefHeight="32.0" prefWidth="112.0" text="Answer" />
+      <ImageView fitHeight="287.0" fitWidth="214.0" layoutX="544.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Shark5.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

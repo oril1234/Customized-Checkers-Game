@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="733.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoadGameFromTextController">
+   <children>
+      <ImageView fitHeight="751.0" fitWidth="920.0">
+         <image>
+            <Image url="@Backround.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="chooseNotSavedBtn" layoutX="339.0" layoutY="249.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="54.0" prefWidth="297.0" style="-fx-background-color: #259797; -fx-background-radius: 22;" text="Choose File">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#f5f5f5" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="36.0" layoutY="33.0" mnemonicParsing="false" onAction="#returnToHomePage" style="-fx-background-color: #d1d6d6;" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="deleteUploadBtn" layoutX="336.0" layoutY="523.0" mnemonicParsing="false" onAction="#deletUpload" prefHeight="24.0" prefWidth="23.0" style="-fx-background-color: RED; -fx-background-radius: 0; -fx-padding: 0;" text="x" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="WHITESMOKE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="fileName" layoutX="372.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="314.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button fx:id="uploadBtn" layoutX="425.0" layoutY="603.0" mnemonicParsing="false" onAction="#upload" prefHeight="54.0" prefWidth="134.0" style="-fx-background-color: Orange; -fx-background-radius: 22;" text="Upload" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#f5f5f5" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text focusTraversable="true" fontSmoothingType="LCD" layoutX="217.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload A game" underline="true">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="254.45499999999998" radius="126.86375" spread="0.87" width="255.0">
+               <input>
+                  <MotionBlur radius="0.0">
+                     <input>
+                        <Bloom />
+                     </input>
+                  </MotionBlur>
+               </input>
+            </DropShadow>
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#169a9a" />
+                  <Stop color="#385454" offset="0.010869565217391304" />
+                  <Stop color="#497373" offset="0.9963768115942029" />
+                  <Stop color="#f2f2f2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Verdana Italic" size="63.0" />
+         </font>
+      </Text>
+      <Text layoutX="339.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Load Game With Specific State" wrappingWidth="359.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button fx:id="chooseSavedBtn" layoutX="339.0" layoutY="426.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="54.0" prefWidth="297.0" style="-fx-background-color: #259797; -fx-background-radius: 22;" text="Choose File">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#f5f5f5" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="339.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Saved Game:" wrappingWidth="359.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>

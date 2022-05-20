@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pickNicknamesAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1154.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PickNickNamesController">
+   <children>
+      <ImageView fitHeight="743.0" fitWidth="1168.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HomePicture.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="502.0" layoutY="476.0" mnemonicParsing="false" onAction="#startGame" style="-fx-background-radius: 22; -fx-background-color: #259797;" text="Start Game!" textFill="#f8f8f8">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+         <DropShadow blurType="ONE_PASS_BOX" height="250.63" radius="125.9075" spread="0.48" width="255.0">
+               <input>
+                  <MotionBlur angle="127.32" radius="0.0" />
+               </input>
+            </DropShadow>
+            <Blend mode="OVERLAY" opacity="0.17" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReturnToHomePage" style="-fx-background-radius: 22; -fx-background-color: #d1d6d6;" text="Back">
+         <font>
+            <Font size="25.0" />
+         </font>
+              <effect>
+         <DropShadow blurType="ONE_PASS_BOX" height="250.63" radius="125.9075" spread="0.48" width="255.0">
+               <input>
+                  <MotionBlur angle="127.32" radius="0.0" />
+               </input>
+            </DropShadow>
+            <Blend mode="OVERLAY" opacity="0.17" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="whitePlayerField" layoutX="397.0" layoutY="229.0" prefHeight="54.0" prefWidth="360.0" promptText="Fill in white player nickname" style="-fx-background-radius: 22; -fx-background-color: #e9fafa;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="blackPlayerField" layoutX="397.0" layoutY="346.0" prefHeight="54.0" prefWidth="360.0" promptText="Fill in black player nickname" style="-fx-background-radius: 22; -fx-background-color: #e9fafa;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Text focusTraversable="true" fontSmoothingType="LCD" layoutX="365.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Nicknames" underline="true">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="254.45499999999998" radius="126.86375" spread="0.87" width="255.0">
+               <input>
+                  <MotionBlur radius="0.0">
+                     <input>
+                        <Bloom />
+                     </input>
+                  </MotionBlur>
+               </input>
+            </DropShadow>
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#169a9a" />
+                  <Stop color="#385454" offset="0.010869565217391304" />
+                  <Stop color="#497373" offset="0.9963768115942029" />
+                  <Stop color="#f2f2f2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Verdana Italic" size="57.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
